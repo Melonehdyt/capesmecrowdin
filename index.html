@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#eef2f5">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0c1824">
+  <title>Dashboard · capes.localize</title>
+  <meta name="description" content="Community localization platform for capes.me.">
+  <link rel="stylesheet" href="public/css/style.css">
+  <script defer src="public/js/theme.js"></script>
+</head>
+<body class="preload">
+  <header data-nav></header>
+  <main class="page">
+    <div class="container wide dashboard-page">
+      <section class="page-intro" id="welcome"></section>
+      <section class="grid grid-4" id="kpis" aria-label="Workspace overview"></section>
+      <section class="dashboard-section">
+        <div class="section-heading"><div><p class="eyebrow">Workspace</p><h2 class="section-title">Quick actions</h2></div></div>
+        <div class="grid grid-4" id="quickActions"></div>
+      </section>
+      <section class="dashboard-section">
+        <div class="section-heading"><div><p class="eyebrow">Active work</p><h2 class="section-title">Projects</h2></div><a class="text-link" href="projects.html">All projects</a></div>
+        <div class="grid grid-3" id="projectGrid"></div>
+      </section>
+      <section class="dashboard-columns">
+        <div class="dashboard-section"><div class="section-heading"><div><p class="eyebrow">Recent changes</p><h2 class="section-title">Activity</h2></div></div><ul class="activity-feed" id="activity"></ul></div>
+        <div class="dashboard-section"><div class="section-heading"><div><p class="eyebrow">Your access</p><h2 class="section-title">Permissions</h2></div></div><ul class="permission-list" id="myPerms"></ul></div>
+      </section>
+      <button class="btn-ghost btn-sm" id="resetDemo" type="button">Reset demo data</button>
+    </div>
+  </main>
+  <footer data-footer></footer>
+  <script type="module" src="dist/js/pages/home.js"></script>
+</body>
+</html>

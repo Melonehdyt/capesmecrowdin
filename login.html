@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#eef2f5">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0c1824">
+  <title>Sign in · capes.localize</title>
+  <meta name="description" content="Community localization platform for capes.me. Sign in with Discord.">
+  <link rel="stylesheet" href="public/css/style.css">
+  <script defer src="public/js/theme.js"></script>
+</head>
+<body class="preload auth-page">
+  <header class="login-header">
+    <a class="brand" href="index.html">
+      <img class="brand-mark" src="public/img/logo.png" alt="" aria-hidden="true">
+      <span>capes<strong>localize</strong></span>
+    </a>
+    <button class="icon-btn" id="themeBtn" type="button" title="Toggle light / dark" aria-label="Toggle light or dark mode"></button>
+  </header>
+  <main class="auth-wrap">
+    <div class="auth-box">
+      <div class="auth-brand">
+        <span class="auth-icon"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l1.5 5.5L20 9l-5 4 1.5 5.5L12 15l-4.5 3.5L9 13l-5-4 6.5-1.5L12 2z"/></svg></span>
+        <p class="eyebrow">Community localization</p>
+        <h1 class="page-title">Welcome to capes.localize</h1>
+        <p class="muted">Translate the capes.me website, apps and docs then keep everything in sync.</p>
+      </div>
+      <button class="btn-discord" id="discordBtn" type="button">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M19.3 5.3A16 16 0 0015.4 4l-.2.4a13 13 0 013.5 1.7 12 12 0 00-10.4 0A13 13 0 018.8 4.4L8.6 4A16 16 0 004.7 5.3C2.2 9 1.5 12.6 1.9 16.1a16 16 0 004.9 2.5l.9-1.6a10 10 0 01-1.6-.8l.4-.3a11 11 0 009.2 0l.4.3a10 10 0 01-1.6.8l.9 1.6a16 16 0 004.9-2.5c.4-4.1-.7-7.7-3.1-10.8zM8.9 14c-.9 0-1.7-.9-1.7-2s.8-2 1.7-2 1.7.9 1.6 2c0 1.1-.7 2-1.6 2zm6.2 0c-.9 0-1.7-.9-1.6-2 0-1.1.7-2 1.6-2s1.7.9 1.6 2c0 1.1-.7 2-1.6 2z"/></svg>
+        Continue with Discord
+      </button>
+      <p class="small muted center">Continue to Discord. Your server role determines your localization access.</p>
+      <p class="small center auth-status" id="authStatus" role="status" aria-live="polite"></p>
+      <div class="login-divider"><span>Roles control what you can do</span></div>
+      <ul class="role-preview" id="rolePreview"></ul>
+    </div>
+  </main>
+  <footer class="login-footer">
+    <div class="footer-inner">
+      <p class="small muted"><span id="year"></span> capes.localize — Owned by capes.me for translations</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script type="module" src="dist/js/pages/login.js"></script>
+</body>
+</html>

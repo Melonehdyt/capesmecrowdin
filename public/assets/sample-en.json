@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "home": "Home",
+    "capes": "Cape Rankings",
+    "compare": "Compare accounts",
+    "activity": "Activity",
+    "news": "News",
+    "discord": "Join our Discord"
+  },
+  "home": {
+    "hero": {
+      "title": "Discover Minecraft capes and top-ranked accounts",
+      "subtitle": "Pick capes to filter, or hit View All for the full rankings."
+    },
+    "cta": {
+      "viewall": "View All",
+      "upload": "Upload your cape"
+    },
+    "member": "{count} members online"
+  },
+  "capes": {
+    "filter": {
+      "title": "Saved filters",
+      "save": "Save current"
+    },
+    "order": {
+      "label": "Cape order"
+    },
+    "removed": {
+      "hide": "Hide Removed Capes"
+    },
+    "count": {
+      "label": "Number of Capes"
+    },
+    "new": {
+      "badge": "NEW"
+    }
+  },
+  "account": {
+    "login": {
+      "title": "Edit Profile",
+      "submit": "Sign In"
+    },
+    "logout": "Log Out",
+    "email": "Email address"
+  },
+  "errors": {
+    "required": "This field is required",
+    "notfound": "Nothing to see here",
+    "network": "Could not reach the server. Try again."
+  },
+  "footer": {
+    "privacy": "Privacy Policy",
+    "api": "Capes API",
+    "donate": "Donate"
+  },
+  "common": {
+    "copy": "Copy",
+    "cancel": "Cancel",
+    "save": "Save",
+    "search": "Search"
+  }
+}

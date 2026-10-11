@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#eef2f5">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0c1824">
+  <title>Translation editor · capes.localize</title>
+  <meta name="description" content="Community localization platform for capes.me.">
+  <link rel="stylesheet" href="public/css/style.css">
+  <script defer src="public/js/theme.js"></script>
+</head>
+<body class="preload editor-page">
+  <header data-nav></header>
+  <main class="page">
+    <div class="container wide route-page">
+      <section class="page-intro editor-heading"><div><p class="eyebrow">Translation workspace</p><h1 class="page-title" id="docTitle">Translation editor</h1></div><div class="cta-row"><button class="btn-ghost" id="preTranslate" type="button">Pre-translate</button><button class="btn-primary" id="saveFile" type="button">Save changes</button></div></section>
+      <section class="panel editor-toolbar"><label class="field"><span>Project</span><select id="projectSelect"></select></label><label class="field"><span>Target language</span><select id="langSelect"></select></label><label class="search-field"><span class="sr-only">Search strings</span><input id="search" type="search" placeholder="Search strings" /></label><label class="field"><span>Status</span><select id="statusFilter"><option value="all">All statuses</option><option value="untranslated">Untranslated</option><option value="translated">Translated</option><option value="approved">Approved</option></select></label></section>
+      <section class="panel editor-progress" id="progressWrap"></section>
+      <section class="editor-layout">
+        <aside class="panel editor-file-panel"><div class="section-heading"><h2 class="section-title">Files</h2></div><div id="fileTree"></div></aside>
+        <div class="panel editor-strings-panel"><div class="section-heading"><h2 class="section-title">Strings</h2></div><div id="strings"></div></div>
+        <aside class="panel editor-context-panel"><div class="segmented" id="ctxTabs"><button class="active" type="button" data-tab="suggestions">Suggestions</button><button type="button" data-tab="comments">Comments</button><button type="button" data-tab="glossary">Glossary</button></div><div id="ctxBody"></div></aside>
+      </section>
+    </div>
+  </main>
+  <footer data-footer></footer>
+  <script type="module" src="dist/js/pages/editor.js"></script>
+</body>
+</html>

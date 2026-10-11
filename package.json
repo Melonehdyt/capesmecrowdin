@@ -1,0 +1,21 @@
+{
+  "name": "capesmecrowdin",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Crowdin-like localization platform for capes.me, rewritten in TypeScript with Discord login, RBAC, JSON import/export and language management.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\"",
+    "rebuild": "npm run clean && npm run build",
+    "serve": "node server.js",
+    "start": "npm run build && node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}

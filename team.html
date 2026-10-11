@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#eef2f5">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0c1824">
+  <title>Team &amp; access · capes.localize</title>
+  <meta name="description" content="Community localization platform for capes.me.">
+  <link rel="stylesheet" href="public/css/style.css">
+  <script defer src="public/js/theme.js"></script>
+</head>
+<body class="preload">
+  <header data-nav></header>
+  <main class="page">
+    <div class="container wide route-page">
+      <section class="page-intro"><div><p class="eyebrow">Administration</p><h1 class="page-title">Team &amp; access</h1><p class="muted">Manage member roles and review what each role can do.</p></div></section>
+      <section class="panel page-panel"><div class="section-heading"><div><p class="eyebrow">Workspace members</p><h2 class="section-title">Members</h2></div></div><div class="table-wrap"><table><thead><tr><th>Member</th><th>Languages</th><th>Joined</th><th>Role</th></tr></thead><tbody id="membersBody"></tbody></table></div></section>
+      <section class="panel page-panel"><div class="section-heading"><div><p class="eyebrow">Role matrix</p><h2 class="section-title">Permissions</h2></div></div><p class="muted small" id="permHint"></p><div class="table-wrap"><table id="permTable"><tbody id="matrixBody"></tbody></table></div></section>
+    </div>
+  </main>
+  <footer data-footer></footer>
+  <script type="module" src="dist/js/pages/team.js"></script>
+</body>
+</html>

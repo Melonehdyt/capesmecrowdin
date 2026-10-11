@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#eef2f5">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0c1824">
+  <title>Projects · capes.localize</title>
+  <meta name="description" content="Community localization platform for capes.me.">
+  <link rel="stylesheet" href="public/css/style.css">
+  <script defer src="public/js/theme.js"></script>
+</head>
+<body class="preload">
+  <header data-nav></header>
+  <main class="page">
+    <div class="container wide route-page">
+      <section class="page-intro"><div><p class="eyebrow">Workspace</p><h1 class="page-title">Projects</h1><p class="muted">Track localization work across products and languages.</p></div><button class="btn-primary" id="newProject" type="button">＋ New project</button></section>
+      <section class="grid grid-4" id="kpis" aria-label="Project overview"></section>
+      <section class="panel page-panel">
+        <div class="toolbar-row"><label class="search-field"><span class="sr-only">Search projects</span><input id="projectSearch" type="search" placeholder="Search projects" /></label><div class="segmented" id="tabRow"><button class="active" type="button" data-filter="all">All</button><button type="button" data-filter="fresh">Recently updated</button><button type="button" data-filter="large">Largest</button></div></div>
+        <div class="grid grid-3" id="projectGrid"></div>
+      </section>
+    </div>
+  </main>
+  <footer data-footer></footer>
+  <script type="module" src="dist/js/pages/projects.js"></script>
+</body>
+</html>
